@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav class="mb-6" />
-    <HelloWorld msg="Welcome to Your Vue.js App" class="text-center"/>
+    <HelloWorld msg="Welcome to Gameward" class="text-center"/>
   </div>
 </template>
 
