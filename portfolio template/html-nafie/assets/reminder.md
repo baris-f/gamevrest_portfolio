@@ -1,0 +1,1 @@
+regex for arab : [\u0621-\u064A]+
