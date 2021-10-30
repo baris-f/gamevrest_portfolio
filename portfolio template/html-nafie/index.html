@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +62,7 @@
               <ul class="nav-links">
                 <li v-for="link in navLinks" :key="link.url">
                   <a :href="link.url" @click="closeNavMenu">
-                    {{ link.title.en }}
+                    {{ link.title.fr }}
                   </a>
                 </li>
               </ul>
@@ -117,8 +117,8 @@
 
               <!-- lang switcher button -->
               <li class="lang-switcher">
-                <a href="rtl-index.html" title="">
-                  <img src="assets/images/langs/fr.png" alt="">
+                <a href="en-index.html" title="">
+                  <img src="assets/images/langs/en.png" alt="">
                 </a>
               </li>
 
@@ -153,9 +153,9 @@
 
           <div class="hero-text">
             <h2>
-              We Design & Build
-              <br>
-              Creative Projects
+                Nous créons
+                <br>
+                Des projets innovants
             </h2>
             <a href="#contact" class="btn">Get In Touch</a>
           </div>
@@ -247,12 +247,15 @@
                 <div class="text-box-inline">
                   <span class="subtitle">about me</span>
                   <h2>
-                    Need a Creative Product?
+                    Un projet ?
                     <br>
-                    I can Help You!
+                    Nous sommes là !
                   </h2>
                   <p>
-                    Hi! We are a team who has passion for building clean web applications with intuitive functionality. We enjoy the process of turning ideas into reality using creative solutions. We are always curious about learning new skills, tools, and concepts. In addition to working on various solo full stack projects, we have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
+                    Hi! We are a team who has passion for building clean web applications with intuitive functionality.
+                      We enjoy the process of turning ideas into reality using creative solutions. We are always curious
+                      about learning new skills, tools, and concepts. In addition to working on various solo full stack projects,
+                      we have worked with creative teams, which involves daily stand-ups and communications, source control, and project management.
                   </p>
                   <div class="btns-container">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
@@ -273,14 +276,14 @@
               <!-- text box -->
               <div class="skills-text col-lg-6">
                 <div class="text-box-inline">
-                  <span class="subtitle">my skills</span>
+                  <span class="subtitle">nos compétences</span>
                   <h2>
-                    What My Programming
+                    Quels types
                     <br>
-                    Skills Included?
+                    de projets réalisons nous ?
                   </h2>
                   <p>
-                    I develop simple, intuitive and responsive user interface that helps users get things done with less effort and time with those technologies.
+                    Nous développons des projets avec des technologies innovantes et variées, de l'application éducative à la VR en passant par le jeu vidéo !
                   </p>
                   <div ref="skillsSwitchBtn" class="toggle-switch-btn">
                     <input id="skills-list" type="radio" value="skills" v-model="skillsType" checked>
@@ -340,9 +343,9 @@
                         <template v-if="Object.keys(item).length > 0">
                           <h3>{{ item.date }}</h3>
                           <div class="ultimate-tooltip">
-                            <h4 class="ultimate-tooltip-title">{{ item.companyName.en }}</h4>
-                            <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
-                            <p>{{ item.desc.en }}</p>
+                            <h4 class="ultimate-tooltip-title">{{ item.companyName.fr }}</h4>
+                            <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.fr }}</h5>
+                            <p>{{ item.desc.fr }}</p>
                           </div>
                           <div class="ultimate-tooltip-arrow"></div>
                         </template>
@@ -380,14 +383,14 @@
                 <li>
                   <!-- text box -->
                   <div class="text-box-inline">
-                    <span class="subtitle">my works</span>
+                    <span class="subtitle">nos réalisations</span>
                     <h2>
-                      See My Works Which
+                      Découvrez
                       <br>
-                      Will Amaze You!
+                      nos réalisations !
                     </h2>
                     <p>
-                      We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.
+                        Nous avons au fil des années expérimenté avec de nombreux projets, découvrez les ci dessous !
                     </p>
                     <ul class="works-filter">
                       <li v-for="filter in filters" :key="filter">
@@ -403,14 +406,14 @@
                 <!-- start items list -->
                 <li class="portfolio-item"
                   v-for="work in filteredPortfolioItems"
-                  :key="work.title.en">
+                  :key="work.title.fr">
                   <a :href="work.url" target="_blank" rel="noopener">
                     <div class="item-img">
-                      <img :src="work.imgUrl" :alt="work.title.en">
+                      <img :src="work.imgUrl" :alt="work.title.fr">
                     </div>
                     <div class="item-details">
-                      <h3 class="title">{{ work.title.en }}</h3>
-                      <div class="date">{{ work.date.en }}</div>
+                      <h3 class="title">{{ work.title.fr }}</h3>
+                      <div class="date">{{ work.date.fr }}</div>
                     </div>
                   </a>
                 </li>
@@ -429,11 +432,11 @@
         <div id="testimonials" class="testimonials-section section" tabindex="-1">
           <div class="container">
             <div class="section-title">
-              <span class="subtitle">testimonials</span>
+              <span class="subtitle">Avis</span>
               <h2>
-                Check What's My Clients
+                  Ce que nos clients
                 <br>
-                Say About Me
+                  disent de nous
               </h2>
             </div>
           </div>
@@ -443,15 +446,15 @@
               <li class="has-ultimate-tooltip"
                 tabindex="0"
                 v-for="item in testimonialsItems"
-                :key="item.quoteAuthor.en">
+                :key="item.quoteAuthor.fr">
                 <div class="testimonials-item">
                   <div class="testimonial-author-img">
-                    <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.en">
+                    <img :src="item.imgUrl || 'assets/images/testimonials/anonymous-user.png'" :alt="item.quoteAuthor.fr">
                   </div>
                   <div class="ultimate-tooltip">
-                    <p>{{ item.quoteContent.en }}</p>
-                    <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.en }}</h4>
-                    <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.en }}</h5>
+                    <p>{{ item.quoteContent.fr }}</p>
+                    <h4 class="ultimate-tooltip-title">{{ item.quoteAuthor.fr }}</h4>
+                    <h5 class="ultimate-tooltip-subtitle">{{ item.jobTitle.fr }}</h5>
                   </div>
                   <div class="ultimate-tooltip-arrow"></div>
                 </div>
@@ -471,12 +474,12 @@
                 <div class="text-box-inline">
                   <span class="subtitle">contact</span>
                   <h2>
-                    Have You Any Project?
+                    Vous avez un projet ?
                     <br>
-                    Please Drop a Message
+                    N'hésitez pas à laisser un message
                   </h2>
                   <p>
-                    Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.
+                      Contactez nous pour la moindre information. Nous répondrons aussi rapidement que possible.
                   </p>
                 </div>
 
@@ -485,17 +488,16 @@
                   <li>
                     <img src="assets/images/icons/address.png" alt="Address">
                     <div>
-                      <strong>Address:</strong>
-                      941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
+                      <strong>Adresse:</strong>
+                      Paris, Nancy, Epinal
                     </div>
                   </li>
                   <li>
                     <img src="assets/images/icons/phone.png" alt="Phone">
                     <div>
-                      <strong>Phone:</strong>
+                      <strong>Téléphone:</strong>
                       <ul>
                         <li><a href="tel:02966202290" class="ltr-dir">(02) 966 202 290</a></li>
-                        <li><a href="tel:02966202291" class="ltr-dir">(02) 966 202 291</a></li>
                       </ul>
                     </div>
                   </li>
@@ -541,22 +543,22 @@
                 <form ref="contactForm"
                   class="contact-form form-styled"
                   action="contact_form.php"
-                  data-success-msg="Message sent successfully!"
-                  data-err-msg="Oops! something went wrong, please try again.">
+                  data-success-msg="Message envoyé avec succès !"
+                  data-err-msg="Oups! Quelque chose s'est mal passé. Veuillez essayer à nouveau">
                   <div class="group">
-                    <label>Name</label>
+                    <label>Nom</label>
                     <div class="control has-prefix-icon">
                       <input type="text"
                         name="name"
-                        placeholder="e.g. John Doe"
+                        placeholder="e. Thomas Dupont"
                         minlength="3"
                         required>
                       <i class="fa fa-user-circle prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
                       <div class="errors-msgs">
-                        <input class="required" type="hidden" value="Name is required">
-                        <input class="minLength" type="hidden" value="Name must be at least 3 characters">
+                        <input class="required" type="hidden" value="Le nom n'est pas requis">
+                        <input class="minLength" type="hidden" value="Votre nom doit faire au moins 3 caractères">
                       </div>
                     </div>
                   </div>
@@ -567,7 +569,7 @@
                         type="email"
                         inputmode="email"
                         name="email"
-                        placeholder="e.g. john.doe@gmail.com"
+                        placeholder="e. thomas.dupont@gmail.com"
                         required>
                       <i class="fa fa-envelope prefix-icon" aria-hidden="true"></i>
 
@@ -579,24 +581,24 @@
                     </div>
                   </div>
                   <div class="group phone-number">
-                    <label>Phone <span class="optional">(Optional)</span></label>
+                    <label>Téléphone <span class="optional">(Optional)</span></label>
                     <div class="control has-prefix-icon">
                       <input type="tel"
                         inputmode="tel"
                         name="phone"
-                        placeholder="Phone Number">
+                        placeholder="Numéro de téléphone">
                       <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
                       <div class="errors-msgs">
-                        <input class="invalid" type="hidden" value="Please enter a valid Phone Number">
+                        <input class="invalid" type="hidden" value="Entrez un numéro valide">
                       </div>
                     </div>
                   </div>
                   <div class="group">
                     <label>Message</label>
                     <div class="control has-prefix-icon">
-                      <textarea name="message" placeholder="Write message..." required></textarea>
+                      <textarea name="message" placeholder="Votre message..." required></textarea>
                       <i class="fa fa-comments prefix-icon" aria-hidden="true"></i>
 
                       <!-- validation errors messages -->
@@ -607,7 +609,7 @@
                   </div>
                   <div class="group">
                     <div class="control">
-                      <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation">Send</button>
+                      <button class="submit-btn btn btn-dark" type="button" @click="contactFormValidation">Envoyer</button>
                     </div>
                   </div>
                 </form>
@@ -628,8 +630,7 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                &copy; {{ copyrightDate }} Proudly Powered by
-                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">Webrouk</a>
+                &copy; {{ copyrightDate }}
               </div>
             </div>
           </div>

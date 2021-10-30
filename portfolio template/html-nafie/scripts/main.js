@@ -182,7 +182,7 @@ const app = Vue.createApp({
       ],
 
       // portfolio items filter by type
-      filters: ['All', 'Games', 'Angular', 'Vue'],
+      filters: ['All', 'Games', 'VR', 'AR', 'Other'],
       currentFilter: 'All',
 
       // list of portfolio items to loop through it
@@ -197,7 +197,7 @@ const app = Vue.createApp({
             en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
           },
-          category: 'HTML',
+          category: 'VR',
           tools: ['HTML', 'PugJS', 'CSS', 'SCSS', 'JavaScript', 'Gulp', 'Bootstrap', 'AJAX', 'Vue', 'Firebase'],
           screenshots: {
             img1: {
@@ -231,7 +231,7 @@ const app = Vue.createApp({
             en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
           },
-          category: 'Angular',
+          category: 'AR',
           tools: ['HTML', 'Slim', 'CSS', 'Less', 'JavaScript', 'TypeScript', 'TailwindCSS', 'AJAX', 'Angular', 'NodeJs', 'MongoDB'],
           screenshots: {
             img1: {
@@ -265,7 +265,7 @@ const app = Vue.createApp({
             en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
           },
-          category: 'Vue',
+          category: 'Games',
           tools: ['HTML', 'PugJS', 'CSS', 'SCSS', 'JavaScript', 'Gulp', 'Materialize', 'AJAX', 'Vue', 'Firebase'],
           screenshots: {
             img1: {
@@ -299,7 +299,7 @@ const app = Vue.createApp({
             en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
           },
-          category: 'HTML',
+          category: 'Other',
           tools: ['HTML', 'Slim', 'CSS', 'Less', 'JavaScript', 'TypeScript', 'TailwindCSS', 'AJAX', 'Angular', 'NodeJs', 'MongoDB'],
           screenshots: {
             img1: {
@@ -341,13 +341,13 @@ const app = Vue.createApp({
       // list of testimonials items to loop through it
       testimonialsItems: [
         {
-          imgUrl: 'https://via.placeholder.com/200',
+          imgUrl: '../html-nafie/assets/images/moi-bg.jpg',
           quoteContent: {
-            en: 'Nafie simply provides amazing web development service. Their team is extremely professional and the easiest to meet I have ever worked with. I would recommend Nafie to anyone.',
-            fr: 'baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette.'
+            en: 'These guys are the best',
+            fr: 'Les meilleurs dans leur domaine.'
           },
-          quoteAuthor: { en: 'Terrell Grimes', fr: 'baguette baguette' },
-          jobTitle: { en: 'Photographer', fr: 'baguette baguette' }
+          quoteAuthor: { en: 'Thierry Gigout', fr: 'Thierry Gigout' },
+          jobTitle: { en: 'PDG @ C2i Santé', fr: 'CEO @ C2i Santé' }
         }, {
           imgUrl: 'https://via.placeholder.com/200',
           quoteContent: {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,13 @@
     <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, vue, vuejs, responsive, sass">
 
     <!-- title of the browser tab -->
-    <title>Nafie - HTML Portfolio Template</title>
+    <title>نافع - قالب بورتفوليو HTML</title>
 
     <!-- favicon -->
     <link rel="icon" href="assets/favicon.ico">
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
 
     <!-- css libraries file -->
     <link rel="stylesheet" href="styles/libraries.min.css">
@@ -51,8 +51,8 @@
         }">
           <div class="container">
             <!-- logo -->
-            <div class="logo" title="Nafie">
-              <h1><a href="index.html">Nafie</a></h1>
+            <div class="logo" title="نافع">
+              <h1><a href="en-index.html">نافع</a></h1>
             </div>
 
             <!-- nav links -->
@@ -62,7 +62,7 @@
               <ul class="nav-links">
                 <li v-for="link in navLinks" :key="link.url">
                   <a :href="link.url" @click="closeNavMenu">
-                    {{ link.title.en }}
+                    {{ link.title.ar }}
                   </a>
                 </li>
               </ul>
@@ -74,34 +74,34 @@
                   <!-- about us -->
                   <div class="about-us">
                     <p>
-                      I love making things simple, intuitive and expertly crafted!
+                      أحب جعل الأشياء بسيطة وبديهية ومصممة بخبرة!
                     </p>
                     <h4 class="block-title">
-                      Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!
+                      المنتج هو الجوهر الحيوي لما أفعله ، المنتج الرائع حقًا يولد من التخطيط الدقيق. هذا هو المكان والأمر الذي تخصصت فيه!
                     </h4>
                   </div>
 
                   <!-- contact info -->
                   <ul class="contact-info row">
                     <li class="col-lg-4">
-                      <h4 class="block-title">Email</h4>
+                      <h4 class="block-title">البريد الإلكتروني</h4>
                       <ul>
                         <li><a href="mailto:info@nafie.com">info@nafie.com</a></li>
                         <li><a href="mailto:support@nafie.com">support@nafie.com</a></li>
                       </ul>
                     </li>
                     <li class="col-lg-4">
-                      <h4 class="block-title">Address</h4>
+                      <h4 class="block-title">العنوان</h4>
                       <ul>
                         <li>
-                          941 saqrqorish Road, alandalos,
+                          941 طريق صقر قريش ، الأندلس ،
                           <br>
-                          grnata, wa 47122-4194
+                          غرناطة ، WA 47122-4194
                         </li>
                       </ul>
                     </li>
                     <li class="col-lg-4">
-                      <h4 class="block-title">Phone</h4>
+                      <h4 class="block-title">الهاتف</h4>
                       <ul>
                         <li><a href="tel:02966202290">(02) 966 202 290</a></li>
                         <li><a href="tel:02966202291">(02) 966 202 291</a></li>
@@ -117,21 +117,21 @@
 
               <!-- lang switcher button -->
               <li class="lang-switcher">
-                <a href="en-index.html" title="عرض باللغة العربية">
-                  <img src="assets/images/langs/ar.png" alt="العربية">
+                <a href="index.html" title="View in English">
+                  <img src="assets/images/langs/en.png" alt="English">
                 </a>
               </li>
 
               <!-- theme switcher button -->
               <li class="theme-switcher">
-                <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
+                <button :class="savedTheme" title="تبديل المظهر" @click="changeAppTheme"></button>
               </li>
 
               <!-- hamburger button -->
               <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
                 <button @click="toggleNavMenu"
-                  title="Toggle Side Menu"
-                  aria-label="Toggle Side Menu"
+                  title="فتح/غلق القائمة الجانبية"
+                  aria-label="فتح/غلق القائمة الجانبية"
                   ref="navMenuToggleBtn">
                   <span></span>
                   <span></span>
@@ -143,22 +143,51 @@
         </header>
         <!-- end of header -->
 
-        <!-- start of 404 page -->
-        <div class="not-found-page page">
-          <div class="not-found-content">
-            <div class="container">
-              <div class="not-found-img">
-                <img src="assets/images/404.png" alt="404">
-              </div>
-              <div class="not-found-text">
-                <h2 class="title">Oops! That page can’t be found</h2>
-                <p class="desc">We're sorry, we couldn't find the page you requested.</p>
-              </div>
-              <a href="index.html" class="btn btn-primary">Back to Home</a>
+        <!-- start of portfolio page -->
+        <div class="portfolio-page portfolio-section section page">
+          <div class="container">
+            <div class="section-content">
+
+              <!-- portfolio items -->
+              <ul class="portfolio-items" ref="portfolioItems">
+                <li>
+                  <!-- text box -->
+                  <div class="text-box-block">
+                    <span class="subtitle">
+                      <a :href="'en-archive-portfolio.html?tax=cat&cat=' + getSinglePortfolioItem.category">{{ getSinglePortfolioItem.category }}</a>
+                    </span>
+                    <h2>{{ getSinglePortfolioItem.title.ar }}</h2>
+                    <p>{{ getSinglePortfolioItem.desc.ar }}</p>
+                    <ul class="work-tools">
+                      <li v-for="tool in getSinglePortfolioItem.tools" :key="tool">
+                        <a :href="'en-archive-portfolio.html?tax=tools&tools=' + tool">{{ tool }}</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <!-- start items list -->
+                <li class="portfolio-item"
+                  v-for="screenshot in getSinglePortfolioItem.screenshots"
+                  :key="screenshot.caption.ar">
+                <!-- href points to the fully sized image -->
+                  <a class="glightbox" target="_blank" rel="noopener" data-gallery="gallery1"
+                    :href="screenshot.url"
+                    :data-glightbox="'title:' + screenshot.caption.ar">
+                    <div class="item-img">
+                      <!-- thumbnails -->
+                      <img :src="screenshot.url" :alt="screenshot.caption.ar">
+                    </div>
+                    <div class="item-details">
+                      <h3 class="title">{{ screenshot.caption.ar }}</h3>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- end of 404 page -->
+        <!-- end of portfolio page -->
 
         <!-- start of footer -->
         <footer>
@@ -166,13 +195,13 @@
             <div class="row">
               <div class="col-lg-6">
                 <!-- logo -->
-                <div class="logo" title="Nafie">
-                  <h1><a href="index.html">Nafie</a></h1>
+                <div class="logo" title="نافع">
+                  <h1><a href="en-index.html">نافع</a></h1>
                 </div>
               </div>
               <div class="col-lg-6">
-                &copy; {{ copyrightDate }} Proudly Powered by
-                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">Webrouk</a>
+                &copy; {{ copyrightDate }} مدعوم بكل بفخر من
+                <a href="https://themeforest.net/user/webrouk/portfolio" target="_blank" rel="noopener">ويبروك</a>
               </div>
             </div>
           </div>
@@ -182,7 +211,7 @@
         <!-- scroll to top button -->
         <button ref="scrollTopBtn"
           :class="['scroll-to-top', isScrollTopBtnDisplayed && 'show-scrollTop']"
-          title="Back To Top"
+          title="عودة الى الأعلى"
           tabindex="0"
           @click="scrollToTop">
           <i class="fa fa-angle-up" aria-hidden="true"></i>

@@ -52,7 +52,7 @@
           <div class="container">
             <!-- logo -->
             <div class="logo" title="نافع">
-              <h1><a href="rtl-index.html">نافع</a></h1>
+              <h1><a href="en-index.html">نافع</a></h1>
             </div>
 
             <!-- nav links -->
@@ -143,51 +143,42 @@
         </header>
         <!-- end of header -->
 
-        <!-- start of portfolio page -->
-        <div class="portfolio-page portfolio-section section page">
+        <!-- start of archive page -->
+        <div class="archive-page portfolio-section section page">
           <div class="container">
+            <div class="section-title">
+              <span class="subtitle">{{ portfolioArchiveName }}</span>
+              <h2>
+                أحدث المشاريع المضافة
+                <br>
+                في تصنيف {{ portfolioArchiveName }}
+              </h2>
+            </div>
+
             <div class="section-content">
-
               <!-- portfolio items -->
-              <ul class="portfolio-items" ref="portfolioItems">
-                <li>
-                  <!-- text box -->
-                  <div class="text-box-block">
-                    <span class="subtitle">
-                      <a :href="'rtl-archive-portfolio.html?tax=cat&cat=' + getSinglePortfolioItem.category">{{ getSinglePortfolioItem.category }}</a>
-                    </span>
-                    <h2>{{ getSinglePortfolioItem.title.ar }}</h2>
-                    <p>{{ getSinglePortfolioItem.desc.ar }}</p>
-                    <ul class="work-tools">
-                      <li v-for="tool in getSinglePortfolioItem.tools" :key="tool">
-                        <a :href="'rtl-archive-portfolio.html?tax=tools&tools=' + tool">{{ tool }}</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-
-                <!-- start items list -->
+              <ul class="portfolio-items" ref="portfolioItems" data-no-works-msg="لا يوجد أعمال">
                 <li class="portfolio-item"
-                  v-for="screenshot in getSinglePortfolioItem.screenshots"
-                  :key="screenshot.caption.ar">
-                <!-- href points to the fully sized image -->
-                  <a class="glightbox" target="_blank" rel="noopener" data-gallery="gallery1"
-                    :href="screenshot.url"
-                    :data-glightbox="'title:' + screenshot.caption.ar">
+                  v-for="work in filteredPortfolioItems"
+                  :key="work.title.ar">
+                  <a :href="'rtl-' + work.url" target="_blank" rel="noopener">
                     <div class="item-img">
-                      <!-- thumbnails -->
-                      <img :src="screenshot.url" :alt="screenshot.caption.ar">
+                      <img :src="work.imgUrl" :alt="work.title.ar">
                     </div>
                     <div class="item-details">
-                      <h3 class="title">{{ screenshot.caption.ar }}</h3>
+                      <h3 class="title">{{ work.title.ar }}</h3>
+                      <div class="date">{{ work.date.ar }}</div>
                     </div>
                   </a>
+                </li>
+                <li>
+                  <button class="more" @click="getPortfolioItems">تحميل المزيد من الأعمال</button>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- end of portfolio page -->
+        <!-- end of archive page -->
 
         <!-- start of footer -->
         <footer>
@@ -196,7 +187,7 @@
               <div class="col-lg-6">
                 <!-- logo -->
                 <div class="logo" title="نافع">
-                  <h1><a href="rtl-index.html">نافع</a></h1>
+                  <h1><a href="en-index.html">نافع</a></h1>
                 </div>
               </div>
               <div class="col-lg-6">
