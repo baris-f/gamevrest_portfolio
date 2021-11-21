@@ -43,19 +43,19 @@ const app = Vue.createApp({
       navLinks: [
         {
           url: '#hero',
-          title: { en: 'Home', fr: 'baguette' }
+          title: { en: 'Home', fr: 'Bienvenue' }
         }, {
           url: '#about',
-          title: { en: 'About', fr: 'baguette baguette' }
+          title: { en: 'About', fr: 'A propos' }
         }, {
           url: '#skills',
-          title: { en: 'Skills', fr: 'baguette' }
+          title: { en: 'Skills', fr: 'Compétences' }
         }, {
           url: '#portfolio',
-          title: { en: 'Portfolio', fr: 'baguette' }
+          title: { en: 'Portfolio', fr: 'Portfolio' }
         }, {
           url: '#contact',
-          title: { en: 'Contact', fr: 'baguette baguette' }
+          title: { en: 'Contact', fr: 'Contact' }
         }
       ],
 
@@ -65,41 +65,26 @@ const app = Vue.createApp({
       // list of skills items to loop through it
       skillsItems: [
         {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'HTML5'
+          imgUrl: 'assets/images/Skills/Unity.png',
+          title: 'Unity'
+        }, {
+          imgUrl: 'assets/images/Skills/VR.png',
+          title: 'VR'
+        }, {
+          imgUrl: 'assets/images/Skills/AR.jpg',
+          title: 'AR'
+        }, {
+          imgUrl: 'assets/images/Skills/3D.png',
+          title: '3D'
         }, {
           imgUrl: 'https://via.placeholder.com/48',
-          title: 'CSS3'
+          title: '2D'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'JavaScript'
+          imgUrl: 'assets/images/Skills/Web.jpg',
+          title: 'Web'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'TypeScript'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'jQuery'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Bootstrap'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Angular'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'React'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Vue'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Firebase'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'PugJS'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'SASS'
+          imgUrl: 'assets/images/Skills/android.png',
+          title: 'Android'
         }
       ],
 
@@ -349,7 +334,7 @@ const app = Vue.createApp({
           quoteAuthor: { en: 'Thierry Gigout', fr: 'Thierry Gigout' },
           jobTitle: { en: 'PDG @ C2i Santé', fr: 'CEO @ C2i Santé' }
         }, {
-          imgUrl: 'https://via.placeholder.com/200',
+          imgUrl: '../html-nafie/assets/images/matthieu-bg.png',
           quoteContent: {
             en: 'Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.',
             fr: 'baguette baguette baguette baguette. baguette baguetteًbaguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
