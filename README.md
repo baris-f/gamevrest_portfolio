@@ -1,5 +1,10 @@
 # gamevrest-portfolio
 
+Portfolio for Uleed
+
+The root project is uncontinued, enter the "html-nafie" folder to access the current sources.
+
+
 ## Project setup
 ```
 npm install
