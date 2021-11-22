@@ -49,7 +49,7 @@ const app = Vue.createApp({
           title: { en: 'About', fr: 'A propos' }
         }, {
           url: '#skills',
-          title: { en: 'Skills', fr: 'Compétences' }
+          title: { en: 'skills', fr: 'Compétences' }
         }, {
           url: '#portfolio',
           title: { en: 'Portfolio', fr: 'Portfolio' }
@@ -65,25 +65,25 @@ const app = Vue.createApp({
       // list of skills items to loop through it
       skillsItems: [
         {
-          imgUrl: 'assets/images/Skills/Unity.png',
+          imgUrl: 'assets/images/skills/Unity.png',
           title: 'Unity'
         }, {
-          imgUrl: 'assets/images/Skills/VR.png',
+          imgUrl: 'assets/images/skills/VR.png',
           title: 'VR'
         }, {
-          imgUrl: 'assets/images/Skills/AR.jpg',
+          imgUrl: 'assets/images/skills/AR.png',
           title: 'AR'
         }, {
-          imgUrl: 'assets/images/Skills/3D.png',
+          imgUrl: 'assets/images/skills/3D.png',
           title: '3D'
         }, {
-          imgUrl: 'https://via.placeholder.com/48',
+          imgUrl: 'assets/images/skills/2D.png',
           title: '2D'
         }, {
-          imgUrl: 'assets/images/Skills/Web.jpg',
+          imgUrl: 'assets/images/skills/Web.png',
           title: 'Web'
         }, {
-          imgUrl: 'assets/images/Skills/android.png',
+          imgUrl: 'assets/images/skills/android.png',
           title: 'Android'
         }
       ],
@@ -99,33 +99,6 @@ const app = Vue.createApp({
         }, {
           imgUrl: 'https://via.placeholder.com/48',
           title: 'Webpack'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Git (Github)'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Npm'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Command Line'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'VS Code'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Trello'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'ClickUp'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Slack'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Photoshop'
-        }, {
-          imgUrl: 'https://via.placeholder.com/48',
-          title: 'Adobe XD'
         }
       ],
 
@@ -167,7 +140,7 @@ const app = Vue.createApp({
       ],
 
       // portfolio items filter by type
-      filters: ['All', 'Games', 'VR', 'AR', 'Other'],
+      filters: ['All', '2D', 'VR', 'AR', 'Other'],
       currentFilter: 'All',
 
       // list of portfolio items to loop through it
@@ -175,137 +148,81 @@ const app = Vue.createApp({
         {
           id: 1,
           url: 'single-portfolio.html?id=1',
-          imgUrl: 'https://via.placeholder.com/400x400',
-          title: { en: 'Lorem Ipsum Dolor 1', fr: 'baguette baguette baguette 1' },
-          date: { en: 'April 2021', fr: 'baguette 2021' },
+          imgUrl: 'assets/images/portfolio/pcr-defender/salon.jpg',
+          title: { en: 'PCR Defender', fr: 'PCR Defender' },
+          date: { en: 'September 2016', fr: 'Septembre 2016' },
           desc: {
-            en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'PCR Defender',
+            fr: "PCR Defender est un jeu PC et mobile ludique, dans lequel on esquive des obstacle pour obtenir le meilleur score. Il a servi lors du salon des JFR de 2016 pour poumouvoir l'entreprise C2i Santé."
           },
-          category: 'VR',
-          tools: ['HTML', 'PugJS', 'CSS', 'SCSS', 'JavaScript', 'Gulp', 'Bootstrap', 'AJAX', 'Vue', 'Firebase'],
+          category: '2D',
+          tools: ['Unity', '2D'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
-              caption: { en: 'caption 5', fr: 'baguette baguette 5' }
+              url: 'assets/images/portfolio/pcr-defender/menu.png',
+              caption: { en: 'Menu', fr: 'Menu' }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
-              caption: { en: 'caption 4', fr: 'baguette baguette 4' }
-            },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 3', fr: 'baguette baguette 3' }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 2', fr: 'baguette baguette 2' }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 1', fr: 'baguette baguette 1' }
+              url: 'assets/images/portfolio/pcr-defender/jeu.png',
+              caption: { en: 'Gameplay', fr: 'Gameplay' }
             }
           }
         }, {
           id: 2,
           url: 'single-portfolio.html?id=2',
-          imgUrl: 'https://via.placeholder.com/530x300',
-          title: { en: 'Lorem Ipsum Dolor 2', fr: 'baguette baguette baguette 2' },
-          date: { en: 'April 2021', fr: 'baguette 2021' },
+          imgUrl: 'assets/images/portfolio/proxima-cities/ProximaCities.png',
+          title: { en: 'Proxima Cities', fr: 'Proxima Cities' },
+          date: { en: 'October 2018 - March 2020', fr: 'Octobre 2018 - Mars 2020' },
           desc: {
-            en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'Proxima Cities',
+            fr: 'Proxima Cities'
           },
           category: 'AR',
-          tools: ['HTML', 'Slim', 'CSS', 'Less', 'JavaScript', 'TypeScript', 'TailwindCSS', 'AJAX', 'Angular', 'NodeJs', 'MongoDB'],
+          tools: ['Unity', '3D'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
-              caption: { en: 'caption 5', fr: 'baguette baguette 5' }
-            },
-            img2: {
-              url: 'https://via.placeholder.com/330x460',
-              caption: { en: 'caption 4', fr: 'baguette baguette 4' }
-            },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 3', fr: 'baguette baguette 3' }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 2', fr: 'baguette baguette 2' }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 1', fr: 'baguette baguette 1' }
+              url: 'assets/images/portfolio/proxima-cities/ProximaCities.png',
+              caption: { en: 'ProximaCities', fr: 'ProximaCities' }
             }
           }
         }, {
           id: 3,
           url: 'single-portfolio.html?id=3',
-          imgUrl: 'https://via.placeholder.com/390x390',
-          title: { en: 'Lorem Ipsum Dolor 3', fr: 'baguette baguette baguette 3' },
-          date: { en: 'April 2021', fr: 'baguette 2021' },
+          imgUrl: 'assets/images/portfolio/barrier-squad/BarrierSquad.png',
+          title: { en: 'Barrier Squad', fr: 'Barrier Squad' },
+          date: { en: 'May 2018 - April 2020', fr: 'Mai 2018 - Avril 2020' },
           desc: {
-            en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'Barrier Squad',
+            fr: 'Barrier Squad'
           },
-          category: 'Games',
-          tools: ['HTML', 'PugJS', 'CSS', 'SCSS', 'JavaScript', 'Gulp', 'Materialize', 'AJAX', 'Vue', 'Firebase'],
+          category: '2D',
+          tools: ['Unity', '2D'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
-              caption: { en: 'caption 5', fr: 'baguette baguette 5' }
-            },
-            img2: {
-              url: 'https://via.placeholder.com/330x460',
-              caption: { en: 'caption 4', fr: 'baguette baguette 4' }
-            },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 3', fr: 'baguette baguette 3' }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 2', fr: 'baguette baguette 2' }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 1', fr: 'baguette baguette 1' }
+              url: 'assets/images/portfolio/barrier-squad/BarrierSquad.png',
+              caption: { en: 'BarrierSquad', fr: 'BarrierSquad' }
             }
           }
         }, {
           id: 4,
           url: 'single-portfolio.html?id=4',
-          imgUrl: 'https://via.placeholder.com/340x510',
-          title: { en: 'Lorem Ipsum Dolor 4', fr: 'baguette baguette baguette 4' },
-          date: { en: 'April 2021', fr: 'baguette 2021' },
+          imgUrl: 'assets/images/portfolio/gamejam/Miasmaze.png',
+          title: { en: 'Game jams', fr: 'Game jams' },
+          date: { en: '2016 - Now', fr: '2016 - Maintenant' },
           desc: {
-            en: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            fr: 'baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguetteً، baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'Game jams',
+            fr: 'Game jams'
           },
           category: 'Other',
-          tools: ['HTML', 'Slim', 'CSS', 'Less', 'JavaScript', 'TypeScript', 'TailwindCSS', 'AJAX', 'Angular', 'NodeJs', 'MongoDB'],
+          tools: ['Unity', '2D'],
           screenshots: {
             img1: {
-              url: 'https://via.placeholder.com/355x200',
-              caption: { en: 'caption 5', fr: 'baguette baguette 5' }
+              url: 'assets/images/portfolio/gamejam/ClickerBattleRoyale.png',
+              caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
             },
             img2: {
-              url: 'https://via.placeholder.com/330x460',
-              caption: { en: 'caption 4', fr: 'baguette baguette 4' }
-            },
-            img3: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 3', fr: 'baguette baguette 3' }
-            },
-            img4: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 2', fr: 'baguette baguette 2' }
-            },
-            img5: {
-              url: 'https://via.placeholder.com/300x225',
-              caption: { en: 'caption 1', fr: 'baguette baguette 1' }
+              url: 'assets/images/portfolio/gamejam/CastleBoat.png',
+              caption: { en: 'CastleBoat', fr: 'CastleBoat' }
             }
           }
         }
@@ -328,27 +245,27 @@ const app = Vue.createApp({
         {
           imgUrl: '../html-nafie/assets/images/moi-bg.jpg',
           quoteContent: {
-            en: 'These guys are the best',
-            fr: 'Les meilleurs dans leur domaine.'
+            en: 'Stonkseur',
+            fr: 'Stonkseur'
           },
-          quoteAuthor: { en: 'Thierry Gigout', fr: 'Thierry Gigout' },
-          jobTitle: { en: 'PDG @ C2i Santé', fr: 'CEO @ C2i Santé' }
+          quoteAuthor: { en: 'Florent Baris', fr: 'Florent Baris\'' },
+          jobTitle: { en: 'Developper', fr: 'Développeur' }
         }, {
           imgUrl: '../html-nafie/assets/images/matthieu-bg.png',
           quoteContent: {
-            en: 'Excellent Team to work with. Always positive to find the most appropriate solution. Nafie is one of the professional web development agency that provides awesome services.',
-            fr: 'baguette baguette baguette baguette. baguette baguetteًbaguette baguette baguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'Le crackito',
+            fr: 'Le crackito'
           },
-          quoteAuthor: { en: 'Lonny Corkery', fr: 'baguette baguette' },
-          jobTitle: { en: 'Project Manager', fr: 'baguette baguette' }
+          quoteAuthor: { en: 'Matthieu Baris', fr: 'Matthieu Baris' },
+          jobTitle: { en: 'Entourloupeur', fr: 'Entourloupeur' }
         }, {
           imgUrl: 'https://via.placeholder.com/200',
           quoteContent: {
-            en: 'Nafie team is very professional, always delivers high quality results, and is always there to help. Look forward to working with Nafie in other projects.',
-            fr: 'baguette baguette baguette baguette baguette baguetteًbaguette baguette baguette baguette ، baguette baguetteًbaguette baguette baguette. baguette baguette baguette baguette baguette baguette baguette.'
+            en: 'Gaspou du 54',
+            fr: 'Gaspou du 54'
           },
-          quoteAuthor: { en: 'Max Schmidt DDS', fr: 'baguette baguette' },
-          jobTitle: { en: 'CEO, Designer', fr: 'baguette SEO' }
+          quoteAuthor: { en: 'Gaspard Thirion', fr: 'Gaspard Thirion' },
+          jobTitle: { en: 'Trialiste', fr: 'Trialiste' }
         }
       ]
     }
