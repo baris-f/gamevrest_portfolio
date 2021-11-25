@@ -6,6 +6,8 @@ The root project is uncontinued, enter the "html-nafie" folder to access the cur
 
 Mise à jour.
 
+2ème mise à jour.
+
 ## Project setup
 ```
 npm install
