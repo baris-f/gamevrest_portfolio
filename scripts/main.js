@@ -243,7 +243,7 @@ const app = Vue.createApp({
       // list of testimonials items to loop through it
       testimonialsItems: [
         {
-          imgUrl: '../html-nafie/assets/images/moi-bg.jpg',
+          imgUrl: 'assets/images/moi-bg.jpg',
           quoteContent: {
             en: 'Stonkseur',
             fr: 'Stonkseur'
@@ -251,7 +251,7 @@ const app = Vue.createApp({
           quoteAuthor: { en: 'Florent Baris', fr: 'Florent Baris\'' },
           jobTitle: { en: 'Developper', fr: 'Développeur' }
         }, {
-          imgUrl: '../html-nafie/assets/images/matthieu-bg.png',
+          imgUrl: 'assets/images/matthieu-bg.png',
           quoteContent: {
             en: 'Le crackito',
             fr: 'Le crackito'
@@ -259,7 +259,7 @@ const app = Vue.createApp({
           quoteAuthor: { en: 'Matthieu Baris', fr: 'Matthieu Baris' },
           jobTitle: { en: 'Entourloupeur', fr: 'Entourloupeur' }
         }, {
-          imgUrl: 'https://via.placeholder.com/200',
+          imgUrl: 'assets/images/gaspou.jpg',
           quoteContent: {
             en: 'Gaspou du 54',
             fr: 'Gaspou du 54'
