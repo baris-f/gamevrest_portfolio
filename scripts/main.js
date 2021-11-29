@@ -65,7 +65,7 @@ const app = Vue.createApp({
       // list of skills items to loop through it
       skillsItems: [
         {
-          imgUrl: 'assets/images/skills/Unity.png',
+          imgUrl: 'assets/images/skills/unity.png',
           title: 'Unity'
         }, {
           imgUrl: 'assets/images/skills/VR.png',
@@ -218,6 +218,28 @@ const app = Vue.createApp({
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/gamejam/ClickerBattleRoyale.png',
+              caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
+            },
+            img2: {
+              url: 'assets/images/portfolio/gamejam/CastleBoat.png',
+              caption: { en: 'CastleBoat', fr: 'CastleBoat' }
+            }
+          }
+        }, {
+          id: 5,
+          url: 'single-portfolio.html?id=5',
+          imgUrl: 'assets/images/portfolio/taiko/taiko.png',
+          title: { en: 'Game jams', fr: 'Game jams' },
+          date: { en: '2016 - Now', fr: '2016 - Maintenant' },
+          desc: {
+            en: 'Game jams',
+            fr: 'Game jams'
+          },
+          category: 'Other',
+          tools: ['Unity', '2D'],
+          screenshots: {
+            img1: {
+              url: 'assets/images/portfolio/taiko/taiko.mp4',
               caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
             },
             img2: {
