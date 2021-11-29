@@ -279,7 +279,7 @@ const app = Vue.createApp({
             fr: 'Le crackito'
           },
           quoteAuthor: { en: 'Matthieu Baris', fr: 'Matthieu Baris' },
-          jobTitle: { en: 'Entourloupeur', fr: 'Entourloupeur' }
+          jobTitle: { en: 'Customer relationship manager', fr: 'Responsable relation client' }
         }, {
           imgUrl: 'assets/images/gaspou.jpg',
           quoteContent: {
