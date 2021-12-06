@@ -232,19 +232,41 @@ const app = Vue.createApp({
           title: { en: 'Game jams', fr: 'Game jams' },
           date: { en: '2016 - Now', fr: '2016 - Maintenant' },
           desc: {
-            en: 'Game jams',
-            fr: 'Game jams'
+            en: 'Taiko VR',
+            fr: 'Taiko VR'
           },
-          category: 'Other',
-          tools: ['Unity', '2D'],
+          category: 'AR',
+          tools: ['Unity', 'AR', '2D', '3D'],
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/taiko/taiko.mp4',
               caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
             },
             img2: {
-              url: 'assets/images/portfolio/gamejam/CastleBoat.png',
+              url: 'assets/images/portfolio/gamejam/taikogame.png',
               caption: { en: 'CastleBoat', fr: 'CastleBoat' }
+            }
+          }
+        }, {
+          id: 6,
+          url: 'single-portfolio.html?id=5',
+          imgUrl: 'assets/images/portfolio/gamejam/LostNFound.png',
+          title: { en: 'Lost and Found Office', fr: 'Lost and Found Office' },
+          date: { en: '2019', fr: '2019' },
+          desc: {
+            en: 'Lost and Found Office',
+            fr: 'Lost and Found Office'
+          },
+          category: 'AR',
+          tools: ['Unity', '2D'],
+          screenshots: {
+            img1: {
+              url: 'assets/images/portfolio/gamejam/lost1.png',
+              caption: { en: 'Lost1', fr: 'Lost1' }
+            },
+            img2: {
+              url: 'assets/images/portfolio/gamejam/lost2.png',
+              caption: { en: 'Lost2', fr: 'Lost2' }
             }
           }
         }
