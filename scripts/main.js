@@ -292,7 +292,7 @@ const app = Vue.createApp({
             en: 'Stonkseur',
             fr: 'Stonkseur'
           },
-          quoteAuthor: { en: 'Florent Baris', fr: 'Florent Baris\'' },
+          quoteAuthor: { en: 'Florent Baris', fr: 'Florent Baris' },
           jobTitle: { en: 'Developper', fr: 'Développeur' }
         }, {
           imgUrl: 'assets/images/matthieu-bg.png',
