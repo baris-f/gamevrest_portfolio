@@ -287,7 +287,7 @@ const app = Vue.createApp({
             fr: 'Gaspou du 54'
           },
           quoteAuthor: { en: 'Gaspard Thirion', fr: 'Gaspard Thirion' },
-          jobTitle: { en: 'Trialiste', fr: 'Trialiste' }
+          jobTitle: { en: 'Développeur', fr: 'Développeur' }
         }
       ]
     }
