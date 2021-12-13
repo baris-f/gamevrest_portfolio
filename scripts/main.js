@@ -188,7 +188,7 @@ const app = Vue.createApp({
               url: 'assets/images/portfolio/proxima-cities/pc2.png',
               caption: { en: 'rocket', fr: 'fusée' }
             },
-            img2: {
+            img3: {
               url: 'assets/images/portfolio/proxima-cities/pc3.png',
               caption: { en: 'city and proximiam', fr: 'ville et proximiam' }
             }
