@@ -289,24 +289,24 @@ const app = Vue.createApp({
         {
           imgUrl: 'assets/images/moi-bg.jpg',
           quoteContent: {
-            en: 'Stonkseur',
-            fr: 'Stonkseur'
+            en: '',
+            fr: ''
           },
           quoteAuthor: { en: 'Florent Baris', fr: 'Florent Baris' },
           jobTitle: { en: 'Developper', fr: 'Développeur' }
         }, {
           imgUrl: 'assets/images/matthieu-bg.png',
           quoteContent: {
-            en: 'Le crackito',
-            fr: 'Le crackito'
+            en: '',
+            fr: ''
           },
           quoteAuthor: { en: 'Matthieu Baris', fr: 'Matthieu Baris' },
           jobTitle: { en: 'Customer relationship manager', fr: 'Responsable relation client' }
         }, {
           imgUrl: 'assets/images/gaspou.jpg',
           quoteContent: {
-            en: 'Gaspou du 54',
-            fr: 'Gaspou du 54'
+            en: '',
+            fr: ''
           },
           quoteAuthor: { en: 'Gaspard Thirion', fr: 'Gaspard Thirion' },
           jobTitle: { en: 'Développeur', fr: 'Développeur' }
