@@ -178,11 +178,19 @@ const app = Vue.createApp({
             fr: 'Proxima Cities'
           },
           category: 'AR',
-          tools: ['Unity', '3D'],
+          tools: ['Unity', '3D', 'AR'],
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/proxima-cities/ProximaCities.png',
               caption: { en: 'ProximaCities', fr: 'ProximaCities' }
+            },
+            img2: {
+              url: 'assets/images/portfolio/proxima-cities/pc2.png',
+              caption: { en: 'rocket', fr: 'fusée' }
+            },
+            img2: {
+              url: 'assets/images/portfolio/proxima-cities/pc3.png',
+              caption: { en: 'city and proximiam', fr: 'ville et proximiam' }
             }
           }
         }, {
@@ -235,8 +243,8 @@ const app = Vue.createApp({
             en: 'Taiko VR',
             fr: 'Taiko VR'
           },
-          category: 'AR',
-          tools: ['Unity', 'AR', '2D', '3D'],
+          category: 'VR',
+          tools: ['Unity', 'VR', '2D', '3D'],
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/taiko/taiko.mp4',
@@ -249,13 +257,13 @@ const app = Vue.createApp({
           }
         }, {
           id: 6,
-          url: 'single-portfolio.html?id=5',
+          url: 'single-portfolio.html?id=6',
           imgUrl: 'assets/images/portfolio/gamejam/LostNFound.png',
           title: { en: 'Lost and Found Office', fr: 'Lost and Found Office' },
           date: { en: '2019', fr: '2019' },
           desc: {
-            en: 'Lost and Found Office',
-            fr: 'Lost and Found Office'
+            en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object.',
+            fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu."
           },
           category: 'AR',
           tools: ['Unity', '2D'],
@@ -267,6 +275,28 @@ const app = Vue.createApp({
             img2: {
               url: 'assets/images/portfolio/gamejam/lost2.png',
               caption: { en: 'Lost2', fr: 'Lost2' }
+            }
+          }
+        }, {
+          id: 7,
+          url: 'single-portfolio.html?id=7',
+          imgUrl: 'assets/images/portfolio/puzzle-ads/PuzzleAds1.png',
+          title: { en: 'Puzzle Ads', fr: 'Puzzle Ads' },
+          date: { en: '2019', fr: '2019' },
+          desc: {
+            en: 'Puzzle Ads is a small gale that copies the trend in ads, but you can actually play it.',
+            fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème.'
+          },
+          category: 'AR',
+          tools: ['Unity', '2D'],
+          screenshots: {
+            img1: {
+              url: 'assets/images/portfolio/puzzle-ads/PuzzleAds2.png',
+              caption: { en: 'Level 2', fr: 'Level 2' }
+            },
+            img2: {
+              url: 'assets/images/portfolio/puzzle-ads/PuzzleAds3.png',
+              caption: { en: 'Level 3', fr: 'Level 3' }
             }
           }
         }
