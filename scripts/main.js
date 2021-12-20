@@ -265,7 +265,7 @@ const app = Vue.createApp({
             en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object.',
             fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu."
           },
-          category: 'AR',
+          category: '2D',
           tools: ['Unity', '2D'],
           screenshots: {
             img1: {
@@ -287,7 +287,7 @@ const app = Vue.createApp({
             en: 'Puzzle Ads is a small gale that copies the trend in ads, but you can actually play it.',
             fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème.'
           },
-          category: 'AR',
+          category: '2D',
           tools: ['Unity', '2D'],
           screenshots: {
             img1: {

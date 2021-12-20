@@ -1328,7 +1328,6 @@ html[dir=rtl] .form-styled .group .control > .fa:not(.prefix-icon).action-icon {
   padding-left: 25px;
   padding-right: 25px;
   border-radius: 30px;
-  cursor: pointer;
   -webkit-transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -3685,7 +3684,7 @@ html[dir=rtl] .about-section .section-content .about-img .layer:first-of-type:be
   border-radius: 0.63rem;
   -webkit-animation: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
           animation: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-  cursor: help;
+  cursor: initial;
 }
 html[dir=ltr] .skills-section .section-content .skills-items li {
   -webkit-animation-name: fadeInUpLeftTranslate;
@@ -3721,6 +3720,7 @@ html[dir=rtl] .skills-section .section-content .skills-items li {
   -webkit-box-shadow: 0 0 0 3px rgba(5, 128, 235, 0.7);
           box-shadow: 0 0 0 3px rgba(5, 128, 235, 0.7);
 }
+
 
 /* 5. Experience Section Styles */
 /*------------------------------*/
