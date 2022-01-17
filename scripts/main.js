@@ -152,11 +152,12 @@ const app = Vue.createApp({
           title: { en: 'PCR Defender', fr: 'PCR Defender' },
           date: { en: 'September 2016', fr: 'Septembre 2016' },
           desc: {
-            en: 'PCR Defender, https://gamepipe.io/@barisf/pcr-defender',
-            fr: "PCR Defender est un jeu PC et mobile ludique, dans lequel on esquive des obstacle pour obtenir le meilleur score. Il a servi lors du salon des JFR de 2016 pour poumouvoir l'entreprise C2i Santé. https://gamepipe.io/@barisf/pcr-defender"
+            en: 'PCR Defender, ',
+            fr: "PCR Defender est un jeu PC et mobile ludique, dans lequel on esquive des obstacle pour obtenir le meilleur score. Il a servi lors du salon des JFR de 2016 pour poumouvoir l'entreprise C2i Santé."
           },
           category: '2D',
           tools: ['Unity', '2D'],
+          link: "https://gamepipe.io/@barisf/pcr-defender",
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/pcr-defender/menu.png',
@@ -179,6 +180,7 @@ const app = Vue.createApp({
           },
           category: 'AR',
           tools: ['Unity', '3D', 'AR'],
+          link: "https://www.youtube.com/watch?v=HJnT_nsFjWY",
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/proxima-cities/ProximaCities.png',
@@ -200,11 +202,12 @@ const app = Vue.createApp({
           title: { en: 'Barrier Squad', fr: 'Barrier Squad' },
           date: { en: 'May 2018 - April 2020', fr: 'Mai 2018 - Avril 2020' },
           desc: {
-            en: 'Barrier Squad, https://gamepipe.io/@barisf/barrier-squad',
-            fr: 'Barrier Squad, https://gamepipe.io/@barisf/barrier-squad'
+            en: 'Barrier Squad,',
+            fr: 'Barrier Squad, '
           },
           category: '2D',
           tools: ['Unity', '2D'],
+          link: "https://gamepipe.io/@barisf/barrier-squad",
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/barrier-squad/BarrierSquad.png',
@@ -243,12 +246,12 @@ const app = Vue.createApp({
           tools: ['Unity', 'VR', '2D', '3D'],
           screenshots: {
             img1: {
-              url: 'assets/images/portfolio/taiko/taiko.mp4',
-              caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
+              url: 'assets/images/portfolio/taiko/taikogame.png',
+              caption: { en: 'Taiko', fr: 'Taiko' }
             },
             img2: {
-              url: 'assets/images/portfolio/gamejam/taikogame.png',
-              caption: { en: 'CastleBoat', fr: 'CastleBoat' }
+              url: 'assets/images/portfolio/taiko/taiko.mp4',
+              caption: { en: 'Click to play !', fr: 'Cliquez pour lancer la vidéo !' }
             }
           }
         }, {
@@ -258,11 +261,12 @@ const app = Vue.createApp({
           title: { en: 'Lost and Found Office', fr: 'Lost and Found Office' },
           date: { en: '2019', fr: '2019' },
           desc: {
-            en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object. https://gamepipe.io/@barisf/lost-and-found-office',
-            fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu. https://gamepipe.io/@barisf/lost-and-found-office"
+            en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object.',
+            fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu."
           },
           category: '2D',
           tools: ['Unity', '2D'],
+          link: "https://gamepipe.io/@barisf/lost-and-found-office",
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/gamejam/lost1.png',
@@ -284,11 +288,12 @@ const app = Vue.createApp({
           title: { en: 'Puzzle Ads', fr: 'Puzzle Ads' },
           date: { en: '2019', fr: '2019' },
           desc: {
-            en: 'Puzzle Ads is a small game that copies the trend in ads, but you can actually play it. https://gamepipe.io/@gamepipe/puzzleadss',
-            fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème. https://gamepipe.io/@gamepipe/puzzleadss'
+            en: 'Puzzle Ads is a small game that copies the trend in ads, but you can actually play it.',
+            fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème.'
           },
           category: '2D',
           tools: ['Unity', '2D'],
+          link: "https://gamepipe.io/@gamepipe/puzzleadss",
           screenshots: {
             img1: {
               url: 'assets/images/portfolio/puzzle-ads/PuzzleAds2.png',

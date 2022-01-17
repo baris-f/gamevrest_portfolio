@@ -74,10 +74,10 @@
                   <!-- about us -->
                   <div class="about-us">
                     <p>
-                      I love making things simple, intuitive and expertly crafted!
+                      Nous aimons créer toute sortes de projets innovants.
                     </p>
                     <h4 class="block-title">
-                      Product is the vital essence of what i do, truly great product is born of meticulous planning and process. This is where i specialized!
+                      Nous sommes spécialisés dans la création de projets uniques adaptés à nos clients.
                     </h4>
                   </div>
 
@@ -94,17 +94,17 @@
                       <h4 class="block-title">Address</h4>
                       <ul>
                         <li>
-                          941 saqrqorish Road, alandalos,
+                          Paris,Nancy,Epinal
                           <br>
-                          grnata, wa 47122-4194
+
                         </li>
                       </ul>
                     </li>
                     <li class="col-lg-4">
                       <h4 class="block-title">Phone</h4>
                       <ul>
-                        <li><a href="tel:02966202290">(02) 966 202 290</a></li>
-                        <li><a href="tel:02966202291">(02) 966 202 291</a></li>
+                        <li><a href="tel:02966202290">+33 (0) 7 50 91 47 56</a></li>
+                        <li><a href="tel:02966202291">+33 (0) 7 50 91 47 56</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -157,6 +157,9 @@
                       <a :href="'archive-portfolio.html?tax=cat&cat=' + getSinglePortfolioItem.category">{{ getSinglePortfolioItem.category }}</a>
                     </span>
                     <h2>{{ getSinglePortfolioItem.title.en }}</h2>
+                    <a v-if="getSinglePortfolioItem.link" :href="getSinglePortfolioItem.link" class="btn btn-primary" target="_blank">
+                      Play Now
+                    </a>
                     <p>{{ getSinglePortfolioItem.desc.en }}</p>
                     <ul class="work-tools">
                       <li v-for="tool in getSinglePortfolioItem.tools" :key="tool">
