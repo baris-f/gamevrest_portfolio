@@ -152,8 +152,8 @@ const app = Vue.createApp({
           title: { en: 'PCR Defender', fr: 'PCR Defender' },
           date: { en: 'September 2016', fr: 'Septembre 2016' },
           desc: {
-            en: 'PCR Defender',
-            fr: "PCR Defender est un jeu PC et mobile ludique, dans lequel on esquive des obstacle pour obtenir le meilleur score. Il a servi lors du salon des JFR de 2016 pour poumouvoir l'entreprise C2i Santé."
+            en: 'PCR Defender, https://gamepipe.io/@barisf/pcr-defender',
+            fr: "PCR Defender est un jeu PC et mobile ludique, dans lequel on esquive des obstacle pour obtenir le meilleur score. Il a servi lors du salon des JFR de 2016 pour poumouvoir l'entreprise C2i Santé. https://gamepipe.io/@barisf/pcr-defender"
           },
           category: '2D',
           tools: ['Unity', '2D'],
@@ -200,8 +200,8 @@ const app = Vue.createApp({
           title: { en: 'Barrier Squad', fr: 'Barrier Squad' },
           date: { en: 'May 2018 - April 2020', fr: 'Mai 2018 - Avril 2020' },
           desc: {
-            en: 'Barrier Squad',
-            fr: 'Barrier Squad'
+            en: 'Barrier Squad, https://gamepipe.io/@barisf/barrier-squad',
+            fr: 'Barrier Squad, https://gamepipe.io/@barisf/barrier-squad'
           },
           category: '2D',
           tools: ['Unity', '2D'],
@@ -225,13 +225,9 @@ const app = Vue.createApp({
           tools: ['Unity', '2D'],
           screenshots: {
             img1: {
-              url: 'assets/images/portfolio/gamejam/ClickerBattleRoyale.png',
-              caption: { en: 'ClickerBattleRoyale', fr: 'ClickerBattleRoyale' }
+              url: 'assets/images/portfolio/gamejam/Miasmaze.png',
+              caption: { en: 'Miasmaze', fr: 'Miasmaze' }
             },
-            img2: {
-              url: 'assets/images/portfolio/gamejam/CastleBoat.png',
-              caption: { en: 'CastleBoat', fr: 'CastleBoat' }
-            }
           }
         }, {
           id: 5,
@@ -262,8 +258,8 @@ const app = Vue.createApp({
           title: { en: 'Lost and Found Office', fr: 'Lost and Found Office' },
           date: { en: '2019', fr: '2019' },
           desc: {
-            en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object.',
-            fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu."
+            en: 'Lost and Found Office is a game made for a Game Jam, in which you need to help people find their lost object. https://gamepipe.io/@barisf/lost-and-found-office',
+            fr: "Lost and Found Office est un jeu fait pour une Game Jam, dans lequel vous devez aider des gens à retrouver ce qu'ils ont perdu. https://gamepipe.io/@barisf/lost-and-found-office"
           },
           category: '2D',
           tools: ['Unity', '2D'],
@@ -273,8 +269,12 @@ const app = Vue.createApp({
               caption: { en: 'Lost1', fr: 'Lost1' }
             },
             img2: {
-              url: 'assets/images/portfolio/gamejam/lost2.png',
+              url: 'assets/images/portfolio/gamejam/LostNFound.png',
               caption: { en: 'Lost2', fr: 'Lost2' }
+            },
+            img3: {
+              url: 'assets/images/portfolio/gamejam/lost2.png',
+              caption: { en: 'Lost3', fr: 'Lost3' }
             }
           }
         }, {
@@ -284,8 +284,8 @@ const app = Vue.createApp({
           title: { en: 'Puzzle Ads', fr: 'Puzzle Ads' },
           date: { en: '2019', fr: '2019' },
           desc: {
-            en: 'Puzzle Ads is a small gale that copies the trend in ads, but you can actually play it.',
-            fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème.'
+            en: 'Puzzle Ads is a small game that copies the trend in ads, but you can actually play it. https://gamepipe.io/@gamepipe/puzzleadss',
+            fr: 'Puzzle Ads est un petit jeu web qui copie le principe des pubs abondantes sur ce thème. https://gamepipe.io/@gamepipe/puzzleadss'
           },
           category: '2D',
           tools: ['Unity', '2D'],
